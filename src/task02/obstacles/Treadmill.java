@@ -12,6 +12,6 @@ public class Treadmill implements Obstacle {
     @Override
     public void overcome(Participant participant) {
         participant.run();
-        System.out.println("Length of the treadmill: " + length);
+        System.out.println("Length of the treadmill: " + length + "m.");
     }
 }

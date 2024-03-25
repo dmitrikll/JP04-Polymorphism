@@ -12,6 +12,6 @@ public class Wall implements Obstacle {
     @Override
     public void overcome(Participant participant) {
         participant.jump();
-        System.out.println("High of the wall: " + high);
+        System.out.println("High of the wall: " + high + "m.");
     }
 }

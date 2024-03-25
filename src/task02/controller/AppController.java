@@ -23,6 +23,7 @@ public class AppController {
 
     public void output() {
         for (Participant participant : participants) {
+            System.out.print("\n");
             for (Obstacle obstacle : obstacles) {
                 obstacle.overcome(participant);
             }

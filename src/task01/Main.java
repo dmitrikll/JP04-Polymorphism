@@ -14,6 +14,6 @@ public class Main {
             totalArea += figure.area();
         }
 
-        System.out.printf("The total area of all figures: %.2f%n", totalArea);
+        System.out.printf("The total area of all figures (cm2): %.2f%n", totalArea);
     }
 }

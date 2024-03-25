@@ -9,6 +9,6 @@ public class Cat implements Participant {
 
     @Override
     public void jump() {
-        System.out.println("Cat jump...");
+        System.out.println("Cat jumps...");
     }
 }
