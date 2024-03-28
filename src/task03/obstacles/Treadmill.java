@@ -1,16 +1,18 @@
 package task03.obstacles;
 
-import task03.abstracts.Obstacle;
-import task03.abstracts.Participant;
-
 public class Treadmill extends Obstacle {
+    private int length;
 
-    public Treadmill(String name, int dist) {
-        super(name, dist);
+    public Treadmill(String name, int length) {
+        super(name);
+        this.length = length;
     }
 
-    @Override
-    public boolean overcome(Participant participant) {
-        return participant.getMaxRunDist() >= getDist();
+    public int getLength() {
+        return length;
+    }
+
+    public boolean overcome(int dist) {
+        return dist >= length;
     }
 }

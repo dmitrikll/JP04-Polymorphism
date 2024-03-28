@@ -1,6 +1,6 @@
-package task03.abstracts;
+package task03.participants;
 
-public abstract class Participant {
+public class Participant {
     private String name;
     private int maxRunDist;
     private int maxJumpHeight;
@@ -10,10 +10,6 @@ public abstract class Participant {
         this.maxRunDist = maxRunDist;
         this.maxJumpHeight = maxJumpHeight;
     }
-
-    public abstract void run(Obstacle obstacle);
-
-    public abstract void jump(Obstacle obstacle);
 
     public String getName() {
         return name;
@@ -25,5 +21,13 @@ public abstract class Participant {
 
     public int getMaxJumpHeight() {
         return maxJumpHeight;
+    }
+
+    public void run() {
+        System.out.println("Participant ran...");
+    }
+
+    public void jump() {
+        System.out.println("Participant jumps...");
     }
 }

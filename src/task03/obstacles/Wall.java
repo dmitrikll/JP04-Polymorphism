@@ -1,16 +1,18 @@
 package task03.obstacles;
 
-import task03.abstracts.Obstacle;
-import task03.abstracts.Participant;
-
 public class Wall extends Obstacle {
+    private int height;
 
-    public Wall(String name, int dist) {
-        super(name, dist);
+    public Wall(String name, int height) {
+        super(name);
+        this.height = height;
     }
 
-    @Override
-    public boolean overcome(Participant participant) {
-        return participant.getMaxJumpHeight() >= getDist();
+    public int getHeight() {
+        return height;
+    }
+
+    public boolean overcome(int dist) {
+        return dist >= height;
     }
 }
